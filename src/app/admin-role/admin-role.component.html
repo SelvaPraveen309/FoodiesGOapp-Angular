@@ -1,0 +1,23 @@
+<p>admin-role works!</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>food name</th>
+            <th>price</th>
+            <th>food type</th>
+            <th>food style</th>
+            <th>food Images</th>
+            </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books;">
+            <td>{{book.foodName}}</td>
+            <td>{{book.price}}</td>
+            <td>{{book.foodType}}</td>
+            <td>{{book.foodStyle}}</td>
+            <td>{{book.foodImages}}</td>
+            <td><button type="button" (click)="deleteBooks(book.foodName)" class="btn btn-danger">Delete</button></td>
+           <td><a routerLink="/updatebook/{{book.id}}">updatebook</a></td>
+        </tr>
+    </tbody>
+</table>

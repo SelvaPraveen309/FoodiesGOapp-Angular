@@ -13,6 +13,7 @@ import { ToastrModule } from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ViewFoodsComponent } from './view-foods/view-foods.component';
+import { AdminRoleComponent } from './admin-role/admin-role.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ViewFoodsComponent } from './view-foods/view-foods.component';
     ListMenusComponent,
     
     HomepageComponent,
-         ViewFoodsComponent
+         ViewFoodsComponent,
+         AdminRoleComponent
   ],
   imports: [
     BrowserModule,
